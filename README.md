@@ -39,3 +39,19 @@ Script will execute the following
 chmod +x setup_pipeline.sh
 ./setup_pipeline.sh
 ```
+
+### Download and Preprocess Data (~10 minutes)
+
+Use ```download_many_blobs_with_transfer_manager``` to programmatically download the tfrecords files (Google Cloud SDK for automation)
+
+> Requires authorization w/ Google Cloud APIs. Users must
+ manually download data and maintain matching folder structure until script is completed, user
+
+Refer to [Google Cloud Docs - Downloading Objects](https://cloud.google.com/storage/docs/downloading-objects)
+
+> Script assumes that there is data loaded in the same folder structure as download storage
+
+```bash
+chmod +x convert_data.sh
+./convert_data.sh
+```
