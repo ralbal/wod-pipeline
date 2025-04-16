@@ -55,3 +55,30 @@ Refer to [Google Cloud Docs - Downloading Objects](https://cloud.google.com/stor
 chmod +x convert_data.sh
 ./convert_data.sh
 ```
+
+### Run Pipeline (~30-45 minutes)
+
+Shell script will execute the following
+
+1. Read user input
+
+2. Run ```preprocessing.py``` to convert and format raw waymo tfrecords
+
+3. Run ```training.py``` to learn patterns from labeled data. 
+    - Outs loss, gradients, and updated weights from labeled training dataset.
+
+4. Run ```validation.py``` to monitor training performance. 
+    - Outs loss and metrics from labeled validation dataset.
+
+5. Run ```testing.py``` to evaluate model accuracy and precision. 
+    - Outs predictions from unlabeled real world data. 
+
+6. Run ```infer.py``` (Optional) to make predictions on new unseen data 
+    - (out of scope of the challenge, nice to have. cough cough, I need a new job...)
+
+7. Run ```postprocess.py``` to generate waymo predictions and submissions
+
+```bash
+chmod +x run_pipeline.sh
+./run_pipeline.sh
+```
