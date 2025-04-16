@@ -6,3 +6,11 @@ This repo provides a full pipeline from clone to submission generation of the Wa
 
 # Demo 
 Here is a demo: [Demonstration](url)
+
+# Workflow
+
+Peek into these shell scripts before running, it's always good to know what the code is doing under the hood. 
+
+1. **setup_pipeline.sh**
+2. **convert_data.sh**
+3. **run_pipeline.sh**
