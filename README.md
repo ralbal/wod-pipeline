@@ -14,3 +14,14 @@ Peek into these shell scripts before running, it's always good to know what the 
 1. **setup_pipeline.sh**
 2. **convert_data.sh**
 3. **run_pipeline.sh**
+
+### Clone Repo (do once)
+
+Go to Sourcetree and clone this repo. or hit the trenches in terminal.
+
+```bash
+git clone https://github.com/ralbal/wod-pipeline.git
+cd wod-pipeline
+```
+
+After cloning, the workflow assumes the current working directory is ```wod-pipeline/```
