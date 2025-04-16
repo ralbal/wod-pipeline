@@ -82,3 +82,6 @@ Shell script will execute the following
 chmod +x run_pipeline.sh
 ./run_pipeline.sh
 ```
+
+# FAQ
+Raise an issue if it demo is unsuccessful. May be a setup issue.
