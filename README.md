@@ -25,3 +25,17 @@ cd wod-pipeline
 ```
 
 After cloning, the workflow assumes the current working directory is ```wod-pipeline/```
+
+### Setup Pipeline (~10 minutes)
+
+Script will execute the following
+
+1. Read user input
+2. Setup and activate virtual environment
+3. Install dependancies and build packages
+4. Run test scripts and readiness check
+
+```bash
+chmod +x setup_pipeline.sh
+./setup_pipeline.sh
+```
